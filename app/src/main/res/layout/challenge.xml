@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:hint="Please answer the corresponding challenge:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="52dp"
+        android:hint="This is the challenge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/movie"
+        android:layout_width="86dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/movie_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movieText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:hint="Movie challenge goes here "
+        app:layout_constraintLeft_toRightOf="@+id/movie"
+        app:layout_constraintStart_toStartOf="wrap_count"
+        app:layout_constraintTop_toTopOf="@id/movie" />
+
+    <ImageView
+        android:id="@+id/television"
+        android:layout_width="83dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="224dp"
+        android:src="@mipmap/television_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/televisionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:hint="Television challenge goes here "
+        app:layout_constraintLeft_toRightOf="@+id/television"
+        app:layout_constraintStart_toStartOf="wrap_count"
+        app:layout_constraintTop_toTopOf="@id/television" />
+    <ImageView
+        android:id="@+id/literature"
+        android:layout_width="83dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="344dp"
+        android:src="@mipmap/literature_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/literatureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:hint="Literature challenge goes here "
+        app:layout_constraintLeft_toRightOf="@+id/literature"
+        app:layout_constraintStart_toStartOf="wrap_count"
+        app:layout_constraintTop_toTopOf="@id/literature" />
+    <ImageView
+        android:id="@+id/music"
+        android:layout_width="83dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="468dp"
+        android:src="@mipmap/music_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/musicText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:hint="Music challenge goes here "
+        app:layout_constraintLeft_toRightOf="@+id/music"
+        app:layout_constraintStart_toStartOf="wrap_count"
+        app:layout_constraintTop_toTopOf="@id/music" />
+
+    <ImageView
+        android:id="@+id/misc"
+        android:layout_width="83dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="580dp"
+        android:src="@mipmap/misc_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/miscText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:hint="Misc challenge goes here "
+        app:layout_constraintLeft_toRightOf="@+id/misc"
+        app:layout_constraintStart_toStartOf="wrap_count"
+        app:layout_constraintTop_toTopOf="@id/misc" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="668dp"
+        android:hint="Next"
+        android:backgroundTint="@android:color/holo_green_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
