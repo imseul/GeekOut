@@ -10,7 +10,7 @@
         android:layout_width="156dp"
         android:layout_height="316dp"
         android:layout_gravity="top"
-        android:layout_marginBottom="472dp"
+        android:layout_marginBottom="416dp"
         android:src="@mipmap/geekout_foreground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
