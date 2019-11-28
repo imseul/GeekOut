@@ -12,11 +12,11 @@
         android:layout_width="156dp"
         android:layout_height="316dp"
         android:layout_gravity="top"
-        android:layout_marginBottom="344dp"
+        android:layout_marginBottom="396dp"
         android:src="@mipmap/geekout_foreground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
