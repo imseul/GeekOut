@@ -24,7 +24,7 @@ class Bidding : Activity(){
 
     fun getBid() {
         val bid = findViewById<EditText>(R.id.enterBid).text.toString()
-
+        //Need to store the bid in the database for the user
         //  Bidding
 
     }

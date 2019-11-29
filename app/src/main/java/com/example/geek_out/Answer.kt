@@ -1,5 +1,6 @@
 package com.example.geek_out
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -23,7 +24,8 @@ class Answer:Activity() {
 
     fun getResponse() {
         val answer = findViewById<EditText>(R.id.answerText).text.toString()
-
+        val intent = Intent(this, DiscussResult::class.java).putExtra("Response", answer)
+        startActivity(intent)
         //  Processing response
 
     }

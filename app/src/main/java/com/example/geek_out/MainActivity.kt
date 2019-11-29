@@ -25,7 +25,9 @@ class MainActivity : AppCompatActivity() {
 
     fun joinRoom() {
         val roomID = findViewById<EditText>(R.id.enterRoom).text.toString()
+        if (!roomID.equals("")) { //make sure that text is not empty
 
+        }
         //  Joining room
 
     }
