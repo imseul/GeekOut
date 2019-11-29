@@ -25,7 +25,7 @@ class Answer:Activity() {
     fun getResponse() {
         val answer = findViewById<EditText>(R.id.answerText).text.toString()
         val intent = Intent(this, DiscussResult::class.java).putExtra("Response", answer)
-        startActivity(intent)
+        startActivity(intent) //this will display player's answer onto another screen
         //  Processing response
 
     }

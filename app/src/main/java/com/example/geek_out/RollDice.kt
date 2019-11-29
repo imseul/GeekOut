@@ -43,5 +43,6 @@ class RollDice : Activity() {
         Thread.sleep(100)
         val intent = Intent(this, Challenge::class.java).putExtra("DiceVal", number)
         startActivity(intent)
+
     }
 }

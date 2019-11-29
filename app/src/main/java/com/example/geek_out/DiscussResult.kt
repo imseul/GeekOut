@@ -13,6 +13,8 @@ class DiscussResult: Activity() {
         val response = intent.getStringExtra("Response")
         val text = findViewById<View>(R.id.discussion) as TextView
         text.setText(response)
+        //should implement a list view so that when other players dispute the player's answer,
+        //their responses would show up as a list of Passes and Fails
 
     }
 

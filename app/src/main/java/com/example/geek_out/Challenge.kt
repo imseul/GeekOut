@@ -27,5 +27,8 @@ class Challenge: Activity() {
         }
         val edit = findViewById<View>(R.id.category) as TextView
         edit.setText("This is the category: "+ string)
+
+        //for each of the challenges, sample questions should be stored in the database, need to wait
+        //for the database to be included so we can figure that out
     }
 }
