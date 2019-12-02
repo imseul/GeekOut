@@ -12,11 +12,9 @@ class Bidding : Activity(){
 
         val confirmButton = findViewById<Button>(R.id.confirm)
         val resetButton = findViewById<Button>(R.id.reset)
-
         confirmButton.setOnClickListener {
             getBid()
         }
-
         resetButton.setOnClickListener {
             resetBid()
         }

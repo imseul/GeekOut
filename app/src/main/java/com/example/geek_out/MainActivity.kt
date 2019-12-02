@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,7 +27,8 @@ class MainActivity : AppCompatActivity() {
     fun joinRoom() {
         val roomID = findViewById<EditText>(R.id.enterRoom).text.toString()
         if (!roomID.equals("")) { //make sure that text is not empty
-
+            val intent = Intent(this, JoinedRoom::class.java).putExtra("Room", "");
+            startActivity(intent);
         }
         //  Joining room
 
@@ -34,8 +36,11 @@ class MainActivity : AppCompatActivity() {
 
     fun createRoom() {
         val roomID = findViewById<EditText>(R.id.enterRoom).text.toString()
-
-        //  Creating Room
+        if (!roomID.equals("")) { //make sure the id is not already existing
+            val intent = Intent(this, JoinedRoom::class.java).putExtra("Room", roomID)
+            startActivity(intent);
+        }
+        //  Creating Room with the id
 
     }
 }
