@@ -37,7 +37,7 @@ class Challenge: Activity() {
         //for the database to be included so we can figure that out
     }
     fun next() {
-        val intent = Intent(this, Answer::class.java)
+        val intent = Intent(this, Bidding::class.java)
         startActivity(intent)
     }
 }
