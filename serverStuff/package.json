@@ -1,18 +1,20 @@
 {
-  "name": "geekout",
+  "name": "geekoutserver",
   "version": "1.0.0",
-  "description": "Server for the Geek Out mobile app",
+  "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Lukas Kagan",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.4",
-    "express": "^4.17.1",
-    "firebase-admin": "^8.8.0",
-    "promise": "^8.0.3"
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "typescript": "^3.7.2"
   }
 }
