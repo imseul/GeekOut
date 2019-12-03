@@ -1,6 +1,7 @@
 package com.example.geek_out
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
@@ -11,6 +12,10 @@ class Challenge: Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.challenge)
+        val button = findViewById<View>(R.id.next)
+        button.setOnClickListener{
+            next()
+        }
         var string = ""
         value = intent.getIntExtra("DiceVal", 0)
         if (value != 0) {
@@ -30,5 +35,9 @@ class Challenge: Activity() {
 
         //for each of the challenges, sample questions should be stored in the database, need to wait
         //for the database to be included so we can figure that out
+    }
+    fun next() {
+        val intent = Intent(this, Answer::class.java)
+        startActivity(intent)
     }
 }

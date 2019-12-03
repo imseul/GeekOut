@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.content.Intent
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,8 +27,13 @@ class MainActivity : AppCompatActivity() {
 
     fun joinRoom() {
         val roomID = findViewById<EditText>(R.id.enterRoom).text.toString()
-        if (!roomID.equals("")) { //make sure that text is not empty
+        val userName = findViewById<EditText>(R.id.userName).text.toString()
 
+        if (!roomID.equals("") && !userName.equals("")) { //make sure that text is not empty
+            val intent = Intent(this, JoinedRoom::class.java).putExtra("Room", "");
+            startActivity(intent);
+        } else {
+            Toast.makeText(applicationContext, "Please fill in needed information", Toast.LENGTH_LONG).show();
         }
         //  Joining room
 
@@ -34,8 +41,14 @@ class MainActivity : AppCompatActivity() {
 
     fun createRoom() {
         val roomID = findViewById<EditText>(R.id.enterRoom).text.toString()
-
-        //  Creating Room
+        val userName = findViewById<EditText>(R.id.userName).text.toString()
+        if (!roomID.equals("") && !userName.equals("")) { //make sure the id is not already existing
+            val intent = Intent(this, JoinedRoom::class.java).putExtra("Room", roomID)
+            startActivity(intent);
+        } else {
+            Toast.makeText(applicationContext, "Please fill in needed information", Toast.LENGTH_LONG).show();
+        }
+        //  Creating Room with the id
 
     }
 }
