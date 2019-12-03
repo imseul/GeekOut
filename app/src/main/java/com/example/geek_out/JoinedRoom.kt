@@ -20,7 +20,7 @@ class JoinedRoom : Activity(){
         if (!roomId.equals("")) {
             text.setText("Session id is: " + roomId.toString())
         }
-
+//need to show players entering the room
     }
     fun startGame() {
         //if current user is picked as the starting point

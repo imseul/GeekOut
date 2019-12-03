@@ -22,13 +22,12 @@ class RollDice : Activity() {
         mDiceImageView!!.setOnClickListener { view ->
             rollAndSet()
         }
-
     }
 
     //  picks a random number between 1 and 6, and sets the die ImageView with image of
     //  corrosponding numbered die
     fun rollAndSet() {
-        var number = (0..6).shuffled().last()
+        var number = (1..6).shuffled().last()
 
         when (number) {
             //  die_1, die_2, .. are supposed to be numbered die images
