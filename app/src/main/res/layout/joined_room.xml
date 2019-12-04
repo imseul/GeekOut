@@ -7,8 +7,6 @@
     android:background="@android:color/white"
     >
 
-
-
     <ImageView
         android:id="@+id/logo"
         android:layout_width="156dp"
@@ -46,8 +44,10 @@
 
     <TextView
         android:id="@+id/playerList"
-        android:layout_width="205dp"
-        android:layout_height="323dp"
+        android:layout_width="171dp"
+        android:layout_height="245dp"
+        android:textColorHint="@android:color/background_dark"
+        android:hint="Player1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

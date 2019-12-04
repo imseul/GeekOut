@@ -4,24 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout3"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
 
-    <TextView
-        android:id="@+id/won"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="140dp"
-        android:hint="Put winning message here"
-        android:textSize="50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:layout_width="136dp"
         android:layout_height="167dp"
         android:layout_marginStart="136dp"
-        android:layout_marginTop="312dp"
+        android:layout_marginTop="4dp"
+        android:src="@mipmap/geekout_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="196dp"
+        android:hint="Player1 won!"
+        android:textColorHint="@android:color/black"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="123dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="288dp"
         android:src="@mipmap/won_foreground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
